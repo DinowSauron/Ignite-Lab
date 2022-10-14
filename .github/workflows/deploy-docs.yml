@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     defaults:
-      run:
-        working-directory: ./web
+      working-directory: ./web
 
     steps:
       - name: Checkout
@@ -22,12 +21,6 @@ jobs:
         with:
           node-version: 16
       
-      - name: Yarn Install Dependencies
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          working-directory: ./web
-          cmd: install --frozen-lockfile # will run `yarn install` command
-
       - name: Build Storybook
         run: yarn build-storybook
 
