@@ -12,8 +12,6 @@ jobs:
     defaults:
       run:
         working-directory: ./web
-      with:
-        working-directory: ./web
 
     steps:
       - name: Checkout
@@ -27,6 +25,7 @@ jobs:
       - name: Yarn Install Dependencies
         uses: borales/actions-yarn@v3.0.0
         with:
+          working-directory: ./web
           cmd: install --frozen-lockfile # will run `yarn install` command
 
       - name: Build Storybook
