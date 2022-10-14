@@ -17,19 +17,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-
-      - name: Enter /Web
-        run: cd web
       
       - name: Yarn Install Dependencies
+        working-directory: ./web
         uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install --frozen-lockfile # will run `yarn install` command
 
       - name: Build Storybook
+        working-directory: ./web
         run: yarn build-storybook
 
       - name: Deploy Storybook
+        working-directory: ./web
         run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
