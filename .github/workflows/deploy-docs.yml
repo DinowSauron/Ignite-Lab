@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     defaults:
-      working-directory: ./web
+      run:
+        working-directory: ./web
 
     steps:
       - name: Checkout
@@ -21,6 +22,9 @@ jobs:
         with:
           node-version: 16
       
+      - name: Yarn Install Dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Build Storybook
         run: yarn build-storybook
 
