@@ -26,9 +26,15 @@
 * `yarn add @radix-ui/react-checkbox` > Checkbox, bom para customizar facilmente o icone dos checkbox's e não perder a acessibilidade
 * `yarn add @storybook/storybook-deployer --save-dev` > Deploy do storybook
   * Scripts: "deploy-storybook": "storybook-to-ghpages" (Colocar no package.json)
+* `yarn add @storybook/addon-a11y` > addon de acessibilidade no storybook (saber da acessibilidade dos seus componentes)
+  * colocar `"@storybook/addon-a11y"` no ./storybook/main.cjs "addons": [ ..., aqui ]
 * `` > 
 
 
+* Github pages:
+  * .storybook/main.cjs > variavel viteFinal
+  * ci: ./.github/workflows (configurado para yarn + diretorio raiz sendo /web)
+  * ir no github depois nas paginas e adicionar a branch gh-page e dar o deploy
 
 ## Uteis:
 

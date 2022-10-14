@@ -10,10 +10,10 @@ export default {
   decorators: [ // adiciona elementos a mais (uma decoração)
     (Story) => {
       return (
-        <div className="flex items-center gap-2">
+        <label className="flex items-center gap-2">
           {Story()}
           <Text size="sm">Lembrar-me de mim por 30 dias</Text>
-        </div>
+        </label>
       )
     }
   ]
