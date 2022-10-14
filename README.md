@@ -1,5 +1,5 @@
 # Ignite Lab 4
- Desenvoldimento de design system
+ Desenvolvimento de design system
 
 
 ## Ferramentas Usadas:
@@ -25,6 +25,7 @@
 * `yarn add phosphor-react` > icones
 * `yarn add @radix-ui/react-checkbox` > Checkbox, bom para customizar facilmente o icone dos checkbox's e não perder a acessibilidade
 * `yarn add @storybook/storybook-deployer --save-dev` > Deploy do storybook
+  * Scripts: "deploy-storybook": "storybook-to-ghpages" (Colocar no package.json)
 * `` > 
 
 
