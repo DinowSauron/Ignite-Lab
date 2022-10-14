@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 16
 
+      - name: enter Web
+        run: cd web
+
       - name: Install Dependencies
         run: npm ci
 
