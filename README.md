@@ -28,7 +28,8 @@
   * Scripts: "deploy-storybook": "storybook-to-ghpages" (Colocar no package.json)
 * `yarn add @storybook/addon-a11y` > addon de acessibilidade no storybook (saber da acessibilidade dos seus componentes)
   * colocar `"@storybook/addon-a11y"` no ./storybook/main.cjs "addons": [ ..., aqui ]
-* `` > 
+
+---
 
 
 * Github pages:
@@ -42,4 +43,7 @@
 * storybook > visualização de componentes em um só lugar/ documentação dos componentes, mto util
 * arquivo do tema escuro: ./.storybook/manager.js + ./.storybook/preview.cjs
 * radix, componentes utilitarios com acessibilidade
-58:26
+* https://transform.tools/ transforma svg em componente react
+* storybook interactions addon > testes no storybook!
+  * storybook test-runner yarn test-storybook (--watch para teste em desenvolvimento)
+* MSW: Moc service worker > testar componente sem necessidade de um servidor hospedado (funciona com o storybook)
